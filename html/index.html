@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- COLOCAR REFERÊNCIA DO AQUIVO .CSS DO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- COLOCAR REFERÊNCIA DO ARQUIVO .CSS MODIFICÁVEL -->
+    <link rel="stylesheet" href="/css/index.css">
+
+    <title>FilmeX</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="nav container">
+            <div class="col">
+                <nav class="navbar navbar-expand">
+                    <div class="navConteudo collapse navbar-collapse" id="collapsibleNavId">
+                        <input name="" id="search" class="inputSearch form-control mr-sm-2" type="text"
+                            placeholder="Search">
+                        <button name="" id="btnSearch" class="btnSearch btn btn-outline my-2 my-sm-0"
+                            type="submit">Search</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="movies-content" class="movies-content">
+
+        </div>
+
+        <div class="footer">
+            <div class="pagination-container">
+                <ul id="pagination" class="pagination-content">
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div id="modal" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-lg">
+                    <div id="modal-header" class="modal-header">
+                        <h4 class="modal-title">Detalhes...</h4>
+                    </div>
+
+                    <div id="modal-body" class="modal-body"></div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn-footer btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- COLOCAR REFERÊNCIA DO ARQUIVO .JQUERY E AXIOS -->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- COLOCAR REFERÊNCIA DO ARQUIVO .JS MODIFICÁVEL -->
+        <script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>
